@@ -8,7 +8,7 @@
     Стопка тарелок, чб взять нижнюю нужно снять все верхние.  
     Стопка железных листов на заводе, итп.  
 
-![Stack - wiki](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BA)
+[Stack - wiki](https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B5%D0%BA)
  
 
 Программно пример:  
@@ -30,7 +30,7 @@ top - верхний элемент
 peek - просмотр top  
 count - кол-во элементов в стеке  
 
-![Хорошая статья про Стэк и Очередь](https://tproger.ru/translations/stacks-and-queues-for-beginners/)
+[Хорошая статья про Стэк и Очередь](https://tproger.ru/translations/stacks-and-queues-for-beginners/)
 
 
 
