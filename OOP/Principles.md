@@ -74,7 +74,7 @@
 [todo $^]
 
 - - -
-[Я не знаю ООП](https://habr.com/post/147927/)
+[Я не знаю ООП](https://habr.com/post/147927/)  
 [Шпаргалка по принципам ООП](https://tproger.ru/translations/oop-principles-cheatsheet/)  
 [Госы - ООП](http://gos-it.wikia.com/wiki/%D0%AD%D1%82%D0%BE_%D0%B3%D0%BE%D1%81%D1%8B!)  
 [Статья на Javarush](https://javarush.ru/groups/posts/1880--principih-oop)  
