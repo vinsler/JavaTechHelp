@@ -1,9 +1,9 @@
 ### interface - интерфейс.  
 
 Пример листинга интерфейса. (с дженериками)  
-(Дженерики 1)[http://cyclowiki.org/wiki/Generic_(Java)]  
+[Дженерики 1](http://cyclowiki.org/wiki/Generic_(Java))  
 [Дженерики 2](http://www.quizful.net/post/java-generics-tutorial)  
-(Дженерики 3)(http://developer.alexanderklimov.ru/android/java/generic.php)  
+[Дженерики 3](http://developer.alexanderklimov.ru/android/java/generic.php)  
 
     public interface Store<T, ID> {  
         void add(T t);  
@@ -41,7 +41,7 @@
 нужна для вашей реализации. Другими словами для простого понимания можно
 теоретически представить что `T = Object`, а поскольку в java все является Object,
 то можно определить туда так же любой ваш класс/переменную, единственный трабл
-будет возникать потом, при 565
+будет возникать потом, эксепшены если класс нулевой итп.
 
 Своими словами - некая программная структура, определяющая отношения между  
 объектами, посредством разделения их на некие поведенческие части.  
@@ -136,9 +136,9 @@
 [Интерфейс](https://metanit.com/java/tutorial/3.7.php)  
 [Интерфейс](http://developer.alexanderklimov.ru/android/java/interface.php)  
 
-todo - functional interfaces
-todo - top main
-todo - shema
+todo - functional interfaces  
+todo - top main  
+todo - shema  
 
 
 
