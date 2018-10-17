@@ -10,7 +10,7 @@ java.lang.Object - Объект
 А что это за методы?  
 С ходу я бы разбил их сразу на 2 части, простые и мультипоточные.  
 
-###`Simple`
+### `Simple`
 
 |pre modificator |method name|post throw exception|  
 |:-:|:-:|:-:|  
@@ -21,7 +21,7 @@ java.lang.Object - Объект
 |public String | toString() |||  
 
 - - -   
-###`Multithreading`
+### `Multithreading`
 
 |pre modificator |method name|post throw exception|  
 |:-:|:-:|:-:|  
@@ -33,7 +33,7 @@ java.lang.Object - Объект
 |protected void |finalize()| throws Throwable |  
 
 
-0123456789012345678901234567890123456789012345678901234567890123456789012345
+0123456789012345678901234567890123456789012345678901234567890123456789012345  
 `...in progress`
 
 [Климов про object](http://developer.alexanderklimov.ru/android/java/object.php)  
