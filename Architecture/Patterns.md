@@ -10,12 +10,15 @@
 
 - Какие бывают паттерны?  
 
-Основных паттернов 24, распределены на 3 вида.
+Основных паттернов 23, распределены на 3 вида.
 
 - - -  
 
 ||Поведенческие <br> `behavioral`|Порождающие <br> `creational`|Структурные <br> `structural`|
-|:-:|:-|:-|:-|
+|:-:|:-:|:-:|:-:|
+|||||
+||Заботятся об эффективной коммуникации между объектами.|Беспокоятся о гибком создании объектов без внесения в программу лишних зависимостей.|Показывают различные способы построения связей между объектами.|
+|||||
 |1|Цепочка обязанностей <br> `Chain of responsibility`|Абстрактная фабрика <br> `Abstract factory`|Адаптер <br> `Adapter`|
 |2|Команда <br> `Command`|Строитель <br> `Builder`|Мост <br> `Bridge`|
 |3|Интерпертатор <br> `Interpreter`|Фабричный метод <br> `Factory method`|Компоновщик <br> `Composite`|
@@ -30,7 +33,7 @@
 
 - - -  
 
-### Singleton - одиночка.  
+### Singleton - Одиночка.  
 Создает единственный объект класса, предоставляет к нему доступ.  
 
 Примеры:  
@@ -51,6 +54,38 @@
     }
 
 [Singleton - habr](https://habr.com/post/129494/)  
+
+
+### Prototype - Прототип.  
+Копирует объекты, не вдаваясь в подробности их реализации.  
+
+Пример:  
+
+    interface Ne4toInterface {  
+        Object copy();  
+        }  
+  
+    Class Ne4toClass implements Ne4toInterface {  
+        int age;  
+        String name;  
+  
+        public Ne4toClass (int age, string name){  
+            this.age = age;  
+            this.name = name;  
+            }  
+  
+        public Object copy(){  
+            Ne4toClass copy = new Ne4toClass (age, name);  
+            return copy;  
+            }  
+    }  
+
+
+
+
+
+[Prototype](https://refactoring.guru/ru/design-patterns/prototype)  
+
 
 
 [Шаблон проектирования](https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F)  
