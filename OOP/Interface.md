@@ -1,7 +1,7 @@
 ### interface - интерфейс.  
 
 Пример листинга интерфейса. (с дженериками)  
-[Дженерики 1](http://cyclowiki.org/wiki/Generic_(Java))  
+[Дженерики 1](http://cyclowiki.org/wiki/Generic_(Java)  
 [Дженерики 2](http://www.quizful.net/post/java-generics-tutorial)  
 [Дженерики 3](http://developer.alexanderklimov.ru/android/java/generic.php)  
 
