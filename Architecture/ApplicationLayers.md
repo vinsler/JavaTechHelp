@@ -2,14 +2,14 @@
 
 - - -  
 
-1) Сущность, Model, Store, Entity, Domain, Pojo итп.  
+`1) Сущность, Model, Store, Entity, Domain, Pojo итп.`  
 - Классы, идентичные полям в таблице базы данных.  
 
 [Сравнение](https://stackoverflow.com/questions/15540147/differentiating-between-domain-model-and-entity-with-respect-to-mvc)
 
 - - -  
 
-2) DAO (data access object), AR (Active Record), DM (data mapper)  
+`2) DAO (data access object), AR (Active Record), DM (data mapper)`  
 - Взаимодействие/работы сущности с базой данных.  
 
 `ВАЖНО!` Работа осуществляется как будто у нас все идеально, поступил запрос,  
@@ -20,7 +20,7 @@
 
 - - -  
 
-3) Service.  
+`3) Service.`  
 - Бизнес логика, проверка, подсчет итп.  
 
 `ВАЖНО!` Вся работа с базой данных осуществляется через сервис слой, он  
@@ -30,7 +30,7 @@
 
 - - -  
 
-4) Controller, View, Web, Jsp итп.  
+`4) Controller, View, Web, Jsp итп.`  
 - Получение запросов, переадресация, отображение итп.  
 
 - - -  

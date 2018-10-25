@@ -36,12 +36,14 @@
 ### Singleton - Одиночка.  
 Создает единственный объект класса, предоставляет к нему доступ.  
 
+- - -  
+
 Примеры:  
 
 	public class Singleton {
 		public static final Singleton INSTANCE = new Singleton();
 	}
-- - -  
+
     public class Singleton {
 
         public static class SingletonHolder {
@@ -55,9 +57,12 @@
 
 [Singleton - habr](https://habr.com/post/129494/)  
 
+- - -  
 
 ### Prototype - Прототип.  
 Копирует объекты, не вдаваясь в подробности их реализации.  
+
+- - -  
 
 Пример:  
 
@@ -80,11 +85,47 @@
             }  
     }  
 
-
-
-
-
 [Prototype](https://refactoring.guru/ru/design-patterns/prototype)  
+- - -  
+### Adapter - Адаптер.  
+От слова адаптировать.  
+
+`Object Adapter (Адаптер объекта)`  
+- Композиция.  
+
+Создается класс-Адаптер, который реализует нужный интерфейс и который хранит в себе  
+поле адаптируемого класса. Происходит стыковка 2 частей.  
+
+
+	public class ObjectAdapter implements TargetInterface {
+		private Adaptee adaptee;
+
+		public void targetMethod() {
+			adaptee.method()
+		}
+	}
+- - -  
+`Class Adapter (Адаптер класса)`  
+- Множественное наследование.  
+
+Создается класс-Адаптер, который реализует нужный интерфейс и который наследуется от
+адаптируемого класса. Происходит стыковка 2 частей.  
+
+	public class ClassAdapter extends Adaptee implements TargetInterface {
+		public void targetMethod() {
+			method();
+		}
+	}
+
+- - -  
+
+`Отличие от Фасад.`  
+- Facade определяет новый интерфейс, Адаптер использует существующие.
+	
+[Adapter javenue](http://www.javenue.info/post/63#object-adapter)  
+
+- - -   
+
 
 
 
@@ -93,3 +134,52 @@
 [Шаблоны банды четырёх](https://jopr.org/blog/detail/gof-design-patterns)  
 [Pattern GOF HABR](https://habr.com/post/210288/)  
 [Каталог паттернов refactoring-guru](https://refactoring.guru/ru/design-patterns/catalog)  
+
+- - -  
+
+### Additional patterns.
+
+- - -  
+
+### Delegate - Делегирование.
+- Передача полномочий/действий/работы.
+- - -  
+Пример:
+
+	class A {
+		void z(){
+		System.out.println("delegate pattern");
+		}
+	}
+
+	class B { // делегирует работу классу А.
+	A a = new A(); // использует класс А.
+		void z(){
+		a.z():
+		}
+	}
+	
+[первые 5 мин видео Delegate, потом добавка ковариантности](https://www.youtube.com/watch?v=qfKX4xQ4Yos)  
+
+- - -  
+
+[todo]  
+
+$ Снимок  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
