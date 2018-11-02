@@ -12,10 +12,11 @@
 |JDBC|Java Data Base Connectivity|||
 |MVC|Model View Controller|||
 |MVP|Model View Presenter|||
-|MVVM|Model View View Model|||
+|MVVM|Model View ViewModel|Паттерн разделения архитектура на 3 слоя.|[MVVM](https://habr.com/company/touchinstinct/blog/330830/)|
 |ORM|Object Relational Mapping|||
 |RMI|Remote Method Invocation|||
 |SQL|Structured Query Language|||
+|UI|User Interface|||
 |XML|eXtensible Markup Language|||
 
 - - -  

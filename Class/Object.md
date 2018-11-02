@@ -32,8 +32,7 @@ java.lang.Object - Объект
 |public final void |wait()| throws InterruptedException |  
 |protected void |finalize()| throws Throwable |  
 
-
-0123456789012345678901234567890123456789012345678901234567890123456789012345  
+  
 `...in progress`
 
 [Климов про object](http://developer.alexanderklimov.ru/android/java/object.php)  

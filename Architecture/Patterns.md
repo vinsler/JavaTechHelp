@@ -24,7 +24,7 @@
 |3|Интерпертатор <br> `Interpreter`|Фабричный метод <br> `Factory method`|Компоновщик <br> `Composite`|
 |4|Итератор <br> `Iterator`	|Прототип <br> `Prototype`|Декоратор <br> `Decorator`|
 |5|Посредник<br> `Mediator`|Одиночка <br> `Singleton`|Фасад <br> `Facade`|
-|6|Хранитель<br> `Memento`|Простая фабрика <br> `Simple factory`|Приспособленец <br> `Flyweight`|
+|6|Хранитель<br> `Memento`||Приспособленец <br> `Flyweight`|
 |7|Наблюдатель<br> `Observer`||Заместитель <br> `Proxy`|
 |8|Состояние<br> `State`|||
 |9|Стратегия<br> `Strategy`|||
@@ -138,7 +138,24 @@
 [wiki - Фасад](https://ru.wikipedia.org/wiki/%D0%A4%D0%B0%D1%81%D0%B0%D0%B4_(%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD_%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F))  
 [RG - Фасад](https://refactoring.guru/ru/design-patterns/facade)  
 
+- - -  
+
+### Factory method - Фабричный метод.  
+
+`Еще можно встретить Simple factory - Простая фабрика.`  
+
+
+
+
+[Factory method - youtube](https://www.youtube.com/watch?time_continue=3&v=HZ4ciLNWX4E)  
+[Factory method - RG](https://refactoring.guru/ru/design-patterns/factory-method)  
+
 - - -   
+
+### Abstract factory - Абстрактная фабрика.
+
+- - -   
+
 
 ### Bridge - Мост.  
 
