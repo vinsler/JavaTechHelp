@@ -140,12 +140,60 @@
 
 - - -  
 
-### Factory method - Фабричный метод.  
+### Factory method - Фабричный метод / Фабрика / Простая фабрика.  
 
-`Еще можно встретить Simple factory - Простая фабрика.`  
+Фабричный метод - потому что создается метод на фабрике, через который  
+создаются новые объекты.
+
+#####`В чем суть:`  
+
+Создание новых объектов на фабрике, для этого:  
+Создаем абстракцию(интерфейс) и реализации для нужных нам классов.  
+Создаем абстракцию(фабрику) со ссылкой на абстракцию по созданию этих классов.  
+
+В основе лежит интерфейс и реализации, это самая главная часть всего паттерна.  
+Мы создали то, что нам нужно, машины, часы, окна, да что угодно. А уже потом  
+мы объявляем новую абстракцию в виде фабрики, в которую запихиваем поле этого  
+интерфейса, другими словами делаем ссылку на него, и добавляем метод для  
+действия - создать, который возвращает определенную реализацию. Т.е. мы просто  
+переносим создание новых объектов из главной иерархии в фабрику. Где мы для  
+каждой реализации из основы, создаем новую реализацию с возвращаемым  
+значением, которое соответствует реализации из основы. Вот и все.  
+
+- - -   
+
+`Пример:`  
+
+	interface Osnova {} // абстракция  
+	class KotoriyNugenOdin implements Osnova {} // реализация 1  
+	class KotoriyNugenDva implements Osnova {}  // реализация 2  
 
 
+	interface Fabrika { // абстракция фабрика  
+		Osnova sozdat(); // ссылка на абстракцию основы   
+	}  
 
+	class SozdatKotoriyNugenOdin implements Fabrika{ // создание реализации 1  
+		public Osnova sozdat(){ // метод создать  
+			return new KotoriyNugenOdin(); // создаем и возвращаем реализацию 1  
+		}   
+	}  
+	
+	class SozdatKotoriyNugenDva implements Fabrika{ // создание реализации 2
+		public Osnova sozdat(){ // метод создать  
+			return new KotoriyNugenDva(); // создаем и возвращаем реализацию 2  
+		}   
+	}  
+	
+	public class FactoryExample {
+		public static void main(String[] args){
+		Fabrika fabrika = new SozdatKotoriyNugenOdin(); // создаем фабрику нужного нам класса.
+		Osnova osnova = fabrika.sozdat(); // создаем класс.
+		
+		fabrika = new SozdatKotoriyNugenDva();
+		fabrika.sozdat();
+		}
+	}
 
 [Factory method - youtube](https://www.youtube.com/watch?time_continue=3&v=HZ4ciLNWX4E)  
 [Factory method - RG](https://refactoring.guru/ru/design-patterns/factory-method)  
