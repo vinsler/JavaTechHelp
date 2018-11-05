@@ -140,12 +140,14 @@
 
 - - -  
 
-### Factory method - Фабричный метод / Фабрика / Простая фабрика.  
+### Factory method - Фабричный метод.  
+
+[Разница фабрик](https://refactoring.guru/ru/design-patterns/factory-comparison)  
 
 Фабричный метод - потому что создается метод на фабрике, через который  
 создаются новые объекты.
 
-#####`В чем суть:`  
+`В чем суть:`  
 
 Создание новых объектов на фабрике, для этого:  
 Создаем абстракцию(интерфейс) и реализации для нужных нам классов.  
@@ -170,17 +172,17 @@
 
 
 	interface Fabrika { // абстракция фабрика  
-		Osnova sozdat(); // ссылка на абстракцию основы   
+		Osnova sozdatOsnovu(); // ссылка на абстракцию основы   
 	}  
 
 	class SozdatKotoriyNugenOdin implements Fabrika{ // создание реализации 1  
-		public Osnova sozdat(){ // метод создать  
+		public Osnova sozdatOsnovu(){ // метод создать  
 			return new KotoriyNugenOdin(); // создаем и возвращаем реализацию 1  
 		}   
 	}  
 	
 	class SozdatKotoriyNugenDva implements Fabrika{ // создание реализации 2
-		public Osnova sozdat(){ // метод создать  
+		public Osnova sozdatOsnovu(){ // метод создать  
 			return new KotoriyNugenDva(); // создаем и возвращаем реализацию 2  
 		}   
 	}  
@@ -188,19 +190,51 @@
 	public class FactoryExample {
 		public static void main(String[] args){
 		Fabrika fabrika = new SozdatKotoriyNugenOdin(); // создаем фабрику нужного нам класса.
-		Osnova osnova = fabrika.sozdat(); // создаем класс.
+		Osnova osnova = fabrika.sozdatOsnovu(); // создаем класс.
 		
 		fabrika = new SozdatKotoriyNugenDva();
-		fabrika.sozdat();
+		fabrika.sozdatOsnovu();
 		}
 	}
 
+- - -  
+	
+`пример ПРОСТАЯ ФАБРИКА, есть метод с оператором, выбирающим продукт.`  
+	
+	class SimpleFactory {
+		public static Osnova create(String number) { // какой класс нужно создать odin или dva ?
+			switch (number) { // смотря что прописали, то и создаем или выдаем ошибку.
+				case "odin": return new KotoriyNugenOdin();
+				case "dva": return new KotoriyNugenDva();
+				default:
+					throw new Exception('Wrong factory name!');
+			}
+		}
+	}
+	
+- - -   
+	
+`пример простого СОЗДАЮЩЕГО МЕТОДА.`  
+
+	class CreateMethod {
+		private CreateMethod value = new CreateMethod(); // создаем наш объект
+        
+		private CreateMethod(){} // запрещаем создавать новые объекты
+		public CreateMethod getInstance(){  // даем создавать новые объекты только так
+			return value;
+		}
+	}
+	
+- - -   
+	
 [Factory method - youtube](https://www.youtube.com/watch?time_continue=3&v=HZ4ciLNWX4E)  
 [Factory method - RG](https://refactoring.guru/ru/design-patterns/factory-method)  
 
 - - -   
 
 ### Abstract factory - Абстрактная фабрика.
+
+Расширенный фабричный метод.  
 
 - - -   
 
