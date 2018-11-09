@@ -28,3 +28,6 @@ output/
 *.zip
 *.tar.gz
 *.rar
+
+# delete files
+df
