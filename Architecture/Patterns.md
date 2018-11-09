@@ -140,6 +140,57 @@
 
 - - -  
 
+### Builder - Строитель.
+
+Использование одного и того же кода для построения разных объектов.  
+
+- - -  
+
+`Пример с UML диаграммы wiki`
+
+	class Director(){
+		Builder builder = new ConcreteBuilder();
+		
+		void construct(){
+			builder.builderPart();
+			return builder.getResult();
+		}
+	}
+
+- - -  
+
+	interface Builder{
+		void builderPart();
+	}
+
+- - -  
+
+	class ConcreteBuilder() implements Builder {
+		Product product = new Product();
+
+		void builderPart(String part1){
+			product.setPart1(part1);
+		}
+		Product getResult(){
+			return product;
+		}
+	}
+
+- - -  
+
+	class Product{
+		String part1;
+		
+		public void setPart1(String part1){
+			this.part1 = part1;
+		}
+	}
+
+- - -  
+
+[Builder](https://www.youtube.com/watch?time_continue=1162&v=kn9H6e5hwMY)  
+- - -  
+
 ### Factory method - Фабричный метод.  
 
 [Разница фабрик](https://refactoring.guru/ru/design-patterns/factory-comparison)  
