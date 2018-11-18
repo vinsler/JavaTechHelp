@@ -21,7 +21,7 @@
 |||||
 |1|Цепочка обязанностей <br> `Chain of responsibility`|Абстрактная фабрика <br> `Abstract factory`|Адаптер <br> `Adapter`|
 |2|Команда <br> `Command`|Строитель <br> `Builder`|Мост <br> `Bridge`|
-|3|Интерпертатор <br> `Interpreter`|Фабричный метод <br> `Factory method`|Компоновщик <br> `Composite`|
+|3|Интерпертатор <br> `Interpreter`|Фабричный метод <br> `Factory method`|Компоновщик <br> [`Composite`](Composite.md)|
 |4|Итератор <br> `Iterator`	|Прототип <br> `Prototype`|Декоратор <br> `Decorator`|
 |5|Посредник<br> `Mediator`|Одиночка <br> `Singleton`|Фасад <br> `Facade`|
 |6|Хранитель<br> `Memento`||Приспособленец <br> `Flyweight`|
