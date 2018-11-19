@@ -23,40 +23,13 @@
 |2|Команда <br> `Command`|Строитель <br> `Builder`|Мост <br> `Bridge`|
 |3|Интерпертатор <br> `Interpreter`|Фабричный метод <br> `Factory method`|Компоновщик <br> [`Composite`](Patterns/Structural/Composite.md)|
 |4|Итератор <br> `Iterator`	|Прототип <br> `Prototype`|Декоратор <br> `Decorator`|
-|5|Посредник<br> `Mediator`|Одиночка <br> `Singleton`|Фасад <br> `Facade`|
+|5|Посредник<br> `Mediator`|Одиночка <br> [`Singleton`](Patterns/Creational/Singleton.md)|Фасад <br> `Facade`|
 |6|Хранитель<br> `Memento`||Приспособленец <br> `Flyweight`|
 |7|Наблюдатель<br> `Observer`||Заместитель <br> `Proxy`|
 |8|Состояние<br> `State`|||
 |9|Стратегия<br> `Strategy`|||
 |10|Шаблонный метод	<br> `Template method`|||
 |11|Посетитель<br> `Visitor`|||
-
-- - -  
-
-<h3 align = "center"> Singleton - Одиночка.  </h3>
-
-Создает единственный объект класса, предоставляет к нему доступ.  
-
-- - -  
-
-Примеры:  
-
-	public class Singleton {
-		public static final Singleton INSTANCE = new Singleton();
-	}
-
-    public class Singleton {
-
-        public static class SingletonHolder {
-            public static final Singleton HOLDER_INSTANCE = new Singleton();
-        }
-
-        public static Singleton getInstance() {
-            return SingletonHolder.HOLDER_INSTANCE;
-        }
-    }
-
-[Singleton - habr](https://habr.com/post/129494/)  
 
 - - -  
 
