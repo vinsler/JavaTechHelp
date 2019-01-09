@@ -1,17 +1,18 @@
-
 ### Example:  
 
-List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);  
-numbers.forEach(System.out::println);  
+	List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6);  
+	numbers.forEach(System.out::println);  
 
 В данном примере есть список, созданный из массива.  
 Перебираются все значения списка и выводятся.  
 
-Вот эту строку:  numbers.forEach(System.out::println);  
+Вот эту строку:  
+
+	numbers.forEach(System.out::println);  
 
 можно представить как:  
 
-numbers.forEach(x -> System.out.println(x));  
+	numbers.forEach(x -> System.out.println(x));  
 
 где используя лямбда выражение, перебираются все значения и выводятся.  
 
