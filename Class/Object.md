@@ -14,27 +14,29 @@ java.lang.Object - Объект
 
 |pre modificator |method name|post throw exception|  
 |:-:|:-:|:-:|  
-|public final native Class|getClass()||  
 |public native int |hashCode()||  
 |public boolean |equals(Object obj)||  
+|public String | toString() ||  
 |protected native Object |clone()| throws CloneNotSupportedException|  
-|public String | toString() |||  
+|public final native Class|getClass()|||  
+
 
 - - -   
 ### `Multithreading`
 
 |pre modificator |method name|post throw exception|  
 |:-:|:-:|:-:|  
+|public final void |wait()| throws InterruptedException |  
 |public final native void |notify ||  
 |public final native void |notifyAll() ||  
+|protected void |finalize()| throws Throwable |  
 |public final native void |wait(long timeout)| throws InterruptedException |  
 |public final void |wait(long timeout, int nanos)| throws InterruptedException |  
-|public final void |wait()| throws InterruptedException |  
-|protected void |finalize()| throws Throwable |  
 
   
 `...in progress`
 
-[Климов про object](http://developer.alexanderklimov.ru/android/java/object.php)  
+[Hashcode/Equals from Habr.com](https://habr.com/ru/post/168195/)  
+[object from Klimov](http://developer.alexanderklimov.ru/android/java/object.php)  
 [java.lang.Object](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html)  
-[object без super.class](https://habr.com/post/265373/)
+[object без super.class from Habr](https://habr.com/post/265373/)
