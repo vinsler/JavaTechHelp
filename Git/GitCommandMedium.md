@@ -5,7 +5,7 @@
 |1|merge|слить||
 |2|branch|<ветка> с флагом удалить|-d|
 |3|push|<затолкнуть> удаление <ветки>|--delete <branch>|
-|4|-|-|-|
+|4|clone|<клонировать> репозиторий ||
 |5|-|-|-|
 
 - `merge` слить новую/измененную ветку для коммита  
@@ -17,6 +17,10 @@ git branch -d user
 
 - `push`  
 git push origin --delete user  
+
+- `clone` клонировать/скопировать репозиторий  
+git clone https://github.com/JavaOPs/topjava  
+
 
 
 [Git branch](https://habr.com/post/195674/)  
