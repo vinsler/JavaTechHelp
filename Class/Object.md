@@ -9,13 +9,17 @@ java.lang.Object - Объект
 - - -
 А что это за методы?  
 С ходу я бы разбил их сразу на 2 части, простые и мультипоточные.  
+Простые можно разбить еще на 2 части, сравнения и информации.  
+Мультипоточные так же разбить на 2 части, основные и повторяющиеся.  
 
 ### `Simple`
 
 |pre modificator |method name|post throw exception|  
 |:-:|:-:|:-:|  
+||...Сравнение||  
 |public native int |hashCode()||  
 |public boolean |equals(Object obj)||  
+||...Информация||  
 |public String | toString() ||  
 |protected native Object |clone()| throws CloneNotSupportedException|  
 |public final native Class|getClass()|||  
@@ -26,12 +30,14 @@ java.lang.Object - Объект
 
 |pre modificator |method name|post throw exception|  
 |:-:|:-:|:-:|  
+||...Основные||
 |public final void |wait()| throws InterruptedException |  
 |public final native void |notify ||  
-|public final native void |notifyAll() ||  
 |protected void |finalize()| throws Throwable |  
+||...Повторяющиеся||
 |public final native void |wait(long timeout)| throws InterruptedException |  
 |public final void |wait(long timeout, int nanos)| throws InterruptedException |  
+|public final native void |notifyAll() ||  
 
   
 `...in progress`
