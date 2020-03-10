@@ -146,6 +146,7 @@ try-with-resources
 
 - Блоки static & non static  
 
+---  
 
     static int i;
 
@@ -156,6 +157,8 @@ try-with-resources
 
     Exception in thread "main" 
     Process finished with exit code 1
+    
+    ошибка на стадии компиляции, можно ничего ни делать  
 
 ---  
 
@@ -166,16 +169,18 @@ try-with-resources
     }
 
     Process finished with exit code 0
+    
+    компиляция пропускает ошибку, нужно обрабатывать  
 
 ---  
 
-- Принудительный выброс исключения. (throw)  
+	Принудительный выброс исключения. (throw)  
 
 	throw new Exception();  
 
 ---  
 
-- Проброс исключений. (throws)  
+    Проброс исключений. (throws)  
 
 	public static void main(String[] args) throws Exception {  
     }  
